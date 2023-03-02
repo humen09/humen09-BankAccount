@@ -32,7 +32,8 @@ balance += amount;
      * @param amount the amount to be withdrawn.
      */
     public void withdraw(double amount){
-balance -= amount;
+if(balance - amount >= 0)
+  balance -= amount;
     }
 
     /**
